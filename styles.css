@@ -3,7 +3,6 @@
     --secondary-color-light: #8892b0;
     --highlight-color-light: #ccd6f6;
     --accent-color: #fff;
-    --button-color: #b5b2b2a6;
 
     --body-font: "Poppins", sans-serif;
 
@@ -29,6 +28,58 @@ body {
     background-color: var(--primary-color-light);
 }
 
+#menu_checkbox {
+    display: none;
+  }
+  
+  label {
+    top: 50%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    width: 30px;
+    height: 30px;
+    transform: translateY(-50%);
+    transition: 0.3s ease transform;
+    cursor: pointer;
+  }
+  
+  label div {
+    width: 6px;
+    height: 6px;
+    background-color: var(--secondary-color-light);
+    margin-left: 0;
+    margin-bottom: 6px;
+    border-radius: 4px;
+    transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+      0.3s ease background-color;
+  }
+  
+  label div:first-child {
+    width: 22px;
+  }
+  
+  label div:nth-child(2) {
+    width: 15px;
+  }
+  
+  label div:last-child {
+    width: 30px;
+    margin-bottom: 0;
+  }
+  
+  #menu_checkbox:checked + label {
+    transform: translateY(-50%) rotateZ(-90deg);
+  }
+  
+  #menu_checkbox:checked + label div {
+    width: 6px;
+    margin-left: 12px;
+    margin-bottom: 3px;
+    background-color: var(--accent-color);
+  }
+
 li, a {
     list-style: none;
     text-decoration: none;
@@ -37,14 +88,14 @@ li, a {
 }
 
 nav {
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    padding: 15px 5%;
+    padding: 25px 5%;
     /* background-color: #fff; */
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 ul li a {
@@ -56,7 +107,6 @@ ul li a:hover {
 }
 
 .logo {
-    margin-right: auto;
     cursor: pointer;
     color: var(--accent-color);
 }
@@ -84,4 +134,30 @@ ul li a:hover {
 
 .btn:hover a {
     color: #0a192f;
+}
+
+@media screen and (max-width: 768px){
+    .nav-list {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #menu_checkbox {
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
 }
