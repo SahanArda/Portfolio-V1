@@ -79,6 +79,6 @@ ul li a:hover {
     width: 100%;
 }
 
-.btn a:hover {
+.btn:hover a {
     color: #0a192f;
 }
