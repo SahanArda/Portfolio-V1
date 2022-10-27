@@ -62,16 +62,19 @@ ul li a:hover {
 }
 
 .btn {
+    color: var(--highlight-color-light);
     font-size: var(--normal-font-size);
     background-color: var(--primary-color-light);
     padding: 6px 15px;
     border-radius: 5px;
     border: 1px solid var(--highlight-color-light);
     transition: 0.3s ease 0s;
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: var(--highlight-color-light);
+    color: var(--primary-color-light);
 }
 
 .btn a {
