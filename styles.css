@@ -7,3 +7,32 @@
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
+
+.flex {
+    display: flex;
+}
+
+body {
+    background-color: var(--primary-color-light);
+}
+
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px, 5%;
+    background-color: red;
+}
+
+ul li {
+    padding: 10px;
+}
+
+.logo {
+    margin-right: auto;
+}
