@@ -2,6 +2,7 @@
     --primary-color-light: #0a192f;
     --secondary-color-light: #8892b0;
     --highlight-color-light: #ccd6f6;
+    --test: #ff9307;
     --accent-color: #fff;
 
     --title-font: "Poppins", sans-serif; 
@@ -179,4 +180,8 @@ ul li a:hover {
         display: flex;
     }
 
+}
+
+.home-blob {
+    width: 50%;
 }
