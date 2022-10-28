@@ -4,7 +4,8 @@
     --highlight-color-light: #ccd6f6;
     --accent-color: #fff;
 
-    --body-font: "Poppins", sans-serif;
+    --title-font: "Poppins", sans-serif; 
+    --body-font: "Roboto", sans-serif;
 
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -95,6 +96,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 25px 5%;
+    font: var(--title-font);
     /* background-color: #fff; */
 }
 
@@ -141,9 +143,6 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 768px){
-    /* .nav-list {
-        display: none;
-    } */
 
     nav {
         flex-direction: column;
@@ -170,6 +169,14 @@ ul li a:hover {
         left: 80%;
         font-size: 1.8rem;
         cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    nav.active .nav-list {
+        display: flex;
     }
 
 }
