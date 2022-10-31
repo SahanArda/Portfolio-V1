@@ -1,9 +1,8 @@
 :root {
     /* Colors */
   --primary-color-light: #0a192f;
-  --secondary-color-light: #8892b0;
+  --text-color-light: #8892b0;
   --highlight-color-light: #ccd6f6;
-  --test: #ff9307;
   --accent-color: #fff;
 
     /* Fonts */
@@ -11,12 +10,25 @@
   --body-font: "Roboto", sans-serif;
 
     /* Font Sizes */
-  --h1-font-size: 1.5rem;
+  --h1-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+}
+
+/* Font Sizes For Larger Screens */
+@media screen and (min-width: 1450px) {
+    :root {
+        /* Font Sizes */
+        --h1-font-size: 4rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: 0.875rem;
+        --smaller-font-size: 0.813rem;
+    }
 }
 
 * {
@@ -37,7 +49,7 @@
   align-items: center;
   gap: 3rem;
   padding: 2rem;
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 .btn {
@@ -80,7 +92,7 @@ label {
 label div {
   width: 6px;
   height: 6px;
-  background-color: var(--secondary-color-light);
+  background-color: var(--text-color-light);
   margin-left: 0;
   margin-bottom: 6px;
   border-radius: 4px;
@@ -125,7 +137,7 @@ a {
   list-style: none;
   text-decoration: none;
   padding: 10px;
-  color: var(--secondary-color-light);
+  color: var(--text-color-light);
 }
 
 nav ul li {
@@ -194,18 +206,33 @@ ul li a:hover {
   min-height: 100vh;
 }
 
-.svg-container {
-  width: 600px;
-  height: 500px;
+/* .svg-container {
+  max-width: 70%;
+  max-height: 70%;
   background-color: blue;
 }
 
-svg {
-  width: 500px;
-}
+.svg-container svg {
+  min-width: 30vw;
+} */
 
 .hero-intro {
-  background-color: red;
+  /* background-color: red; */
+}
+
+.hero-intro h1 {
+    font-size: var(--h1-font-size);
+    font-family: var(--title-font);
+    color: var(--text-color-light);
+}
+
+.hero-intro span {
+    color: var(--highlight-color-light);
+    opacity: 0.9;
+}
+
+.hero-intro p {
+    color: var(--text-color-light);
 }
 
 
