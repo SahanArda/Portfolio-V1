@@ -1,121 +1,43 @@
 :root {
-    --primary-color-light: #0a192f;
-    --secondary-color-light: #8892b0;
-    --highlight-color-light: #ccd6f6;
-    --test: #ff9307;
-    --accent-color: #fff;
+    /* Colors */
+  --primary-color-light: #0a192f;
+  --secondary-color-light: #8892b0;
+  --highlight-color-light: #ccd6f6;
+  --test: #ff9307;
+  --accent-color: #fff;
 
-    --title-font: "Poppins", sans-serif; 
-    --body-font: "Roboto", sans-serif;
+    /* Fonts */
+  --title-font: "Poppins", sans-serif;
+  --body-font: "Roboto", sans-serif;
 
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: 0.938rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
+    /* Font Sizes */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
 }
 
+/* Classes */
 .flex {
-    display: flex;
+  display: flex;
 }
 
-body {
-    background-color: var(--primary-color-light);
-}
-
-#menu-checkbox {
-    display: none;
-}
-
-#menu-hamburger {
-    display: none;
-}
-  
-label {
-top: 50%;
-right: 0;
-left: 0;
-margin: 0 auto;
-display: block;
-width: 30px;
-height: 30px;
-transform: translateY(-50%);
-transition: 0.3s ease transform;
-cursor: pointer;
-}
-
-label div {
-width: 6px;
-height: 6px;
-background-color: var(--secondary-color-light);
-margin-left: 0;
-margin-bottom: 6px;
-border-radius: 4px;
-transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
-    0.3s ease background-color;
-}
-
-label div:first-child {
-width: 22px;
-}
-
-label div:nth-child(2) {
-width: 15px;
-}
-
-label div:last-child {
-width: 30px;
-margin-bottom: 0;
-}
-
-#menu-checkbox:checked + label {
-transform: translateY(-50%) rotateZ(-90deg);
-}
-
-#menu-checkbox:checked + label div {
-width: 6px;
-margin-left: 12px;
-margin-bottom: 3px;
-background-color: var(--accent-color);
-}
-
-li, a {
-    list-style: none;
-    text-decoration: none;
-    padding: 10px;
-    color: var(--secondary-color-light);
-}
-
-nav {
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 5%;
-    font: var(--title-font);
-    /* background-color: #fff; */
-}
-
-nav ul li {
-    margin: 0 5px;
-}
-
-ul li a {
-    transition: 0.3s ease 0s;
-}
-
-ul li a:hover {
-    color: var(--highlight-color-light);
-}
-
-.logo {
-    cursor: pointer;
-    color: var(--accent-color);
+.container {
+  min-height: 60vh;
+  max-width: 60vw;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #fff;
 }
 
 .btn {
@@ -127,61 +49,163 @@ ul li a:hover {
     border: 1px solid var(--highlight-color-light);
     transition: 0.3s ease 0s;
     cursor: pointer;
+  }
+
+body {
+  background-color: var(--primary-color-light);
+}
+
+/* Hamburger icon */
+#menu-checkbox {
+  display: none;
+}
+
+#menu-hamburger {
+  display: none;
+}
+
+label {
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: block;
+  width: 30px;
+  height: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s ease transform;
+  cursor: pointer;
+}
+
+label div {
+  width: 6px;
+  height: 6px;
+  background-color: var(--secondary-color-light);
+  margin-left: 0;
+  margin-bottom: 6px;
+  border-radius: 4px;
+  transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
+    0.3s ease background-color;
+}
+
+label div:first-child {
+  width: 22px;
+}
+
+label div:nth-child(2) {
+  width: 15px;
+}
+
+label div:last-child {
+  width: 30px;
+  margin-bottom: 0;
+}
+
+#menu-checkbox:checked + label {
+  transform: translateY(-50%) rotateZ(-90deg);
+}
+
+#menu-checkbox:checked + label div {
+  width: 6px;
+  margin-left: 12px;
+  margin-bottom: 3px;
+  background-color: var(--accent-color);
+}
+
+/* Navbar */
+nav {
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 5%;
+  font: var(--title-font);
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding: 10px;
+  color: var(--secondary-color-light);
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+ul li a {
+  transition: 0.3s ease 0s;
+}
+
+ul li a:hover {
+  color: var(--highlight-color-light);
+}
+
+.logo {
+  cursor: pointer;
+  color: var(--accent-color);
 }
 
 .btn:hover {
-    background-color: var(--highlight-color-light);
-    color: var(--primary-color-light);
+  background-color: var(--highlight-color-light);
+  color: var(--primary-color-light);
 }
 
-.btn a {
-    color: var(--highlight-color-light);
-    width: 100%;
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 90px;
+  }
+
+  nav ul li {
+    padding: 30px;
+  }
+
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-hamburger {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 80%;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  nav.active .nav-list {
+    display: flex;
+  }
 }
 
-.btn:hover a {
-    color: #0a192f;
+/* Home Page */
+.hero {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-@media screen and (max-width: 768px){
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        padding: 90px;
-    }
-
-    nav ul li {
-        padding: 30px;
-    }
-
-    #menu-checkbox {
-        display: none;
-    }
-
-    #menu-hamburger {
-        display: block;
-        position: absolute;
-        top: 6%;
-        left: 80%;
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-    nav.active .nav-list {
-        display: flex;
-    }
-
+.svg-container {
+  width: 600px;
+  height: 500px;
+  background-color: blue;
 }
 
-.home-blob {
-    width: 50%;
+svg {
+  width: 500px;
 }
+
+.hero-intro {
+  background-color: red;
+}
+
+
