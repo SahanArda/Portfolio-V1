@@ -216,9 +216,9 @@ ul li a:hover {
   min-width: 30vw;
 } */
 
-.hero-intro {
-  /* background-color: red; */
-}
+/* .hero-intro {
+  background-color: red;
+} */
 
 .hero-intro h1 {
     font-size: var(--h1-font-size);
