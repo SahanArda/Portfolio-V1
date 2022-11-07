@@ -1,8 +1,7 @@
 :root {
     /* Colors */
-  --primary-color-light: #0a192f;
-  --text-color-light: #8892b0;
-  --highlight-color-light: #ccd6f6;
+  --primary-color-light: #21201E;
+  --secondary-color-light: #FEA609;
   --accent-color: #fff;
 
     /* Fonts */
@@ -13,6 +12,7 @@
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
+  --large-font-size: 1rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
@@ -53,18 +53,27 @@
 }
 
 .btn {
-    color: var(--highlight-color-light);
+    color: var(--secondary-color-light);
     font-size: var(--normal-font-size);
     background-color: var(--primary-color-light);
     padding: 6px 15px;
     border-radius: 5px;
-    border: 1px solid var(--highlight-color-light);
+    border: 1px solid var(--secondary-color-light);
     transition: 0.3s ease 0s;
     cursor: pointer;
-  }
+}
+
+.btn:hover {
+  background-color: var(--secondary-color-light);
+  color: var(--primary-color-light);
+}
 
 body {
   background-color: var(--primary-color-light);
+}
+
+h1, h2 {
+  font-family: var(--title-font);
 }
 
 /* Hamburger icon */
@@ -92,7 +101,7 @@ label {
 label div {
   width: 6px;
   height: 6px;
-  background-color: var(--text-color-light);
+  background-color: var(--accent-color);
   margin-left: 0;
   margin-bottom: 6px;
   border-radius: 4px;
@@ -137,7 +146,7 @@ a {
   list-style: none;
   text-decoration: none;
   padding: 10px;
-  color: var(--text-color-light);
+  color: var(--accent-color);
 }
 
 nav ul li {
@@ -149,17 +158,12 @@ ul li a {
 }
 
 ul li a:hover {
-  color: var(--highlight-color-light);
+  color: var(--secondary-color-light);
 }
 
 .logo {
   cursor: pointer;
   color: var(--accent-color);
-}
-
-.btn:hover {
-  background-color: var(--highlight-color-light);
-  color: var(--primary-color-light);
 }
 
 @media screen and (max-width: 768px) {
@@ -216,23 +220,38 @@ ul li a:hover {
   min-width: 30vw;
 } */
 
-/* .hero-intro {
-  background-color: red;
-} */
-
-.hero-intro h1 {
-    font-size: var(--h1-font-size);
-    font-family: var(--title-font);
-    color: var(--text-color-light);
+#hero-container {
+  position: absolute;
+  top: 15%;
+  left: 20%;
 }
 
-.hero-intro span {
-    color: var(--highlight-color-light);
-    opacity: 0.9;
+.hero-intro h1 {
+    font-size: 75px;
+    color: var(--secondary-color-light);
+    width: fit-content;
+    text-align:left;
+}
+
+.hero-intro h2 {
+  font-size: 65px;
+  color: var(--secondary-color-light);
+  width: fit-content;
+  text-align: left;
 }
 
 .hero-intro p {
-    color: var(--text-color-light);
+    color: var(--accent-color);
+    width: 400px;
+    font-size: var(--large-font-size);
+    margin-top: 10px;
+    text-align: left;
+}
+
+.hero button {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 40px;
 }
 
 
