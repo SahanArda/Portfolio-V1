@@ -59,6 +59,10 @@
   font-family: var(--body-font);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Classes */
 .flex {
   display: flex;
