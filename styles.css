@@ -1,14 +1,14 @@
 :root {
-    /* Colors */
-  --primary-color-light: #21201E;
-  --secondary-color-light: #FEA609;
+  /* Colors */
+  --primary-color-light: #21201e;
+  --secondary-color-light: #fea609;
   --accent-color: #fff;
 
-    /* Fonts */
+  /* Fonts */
   --title-font: "Poppins", sans-serif;
   --body-font: "Roboto", sans-serif;
 
-    /* Font Sizes */
+  /* Font Sizes */
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -20,15 +20,15 @@
 
 /* Font Sizes For Larger Screens */
 @media screen and (min-width: 1450px) {
-    :root {
-        /* Font Sizes */
-        --h1-font-size: 4rem;
-        --h2-font-size: 1.5rem;
-        --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
-    }
+  :root {
+    /* Font Sizes */
+    --h1-font-size: 4rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
 }
 
 * {
@@ -52,14 +52,14 @@
 }
 
 .btn {
-    color: var(--secondary-color-light);
-    font-size: var(--normal-font-size);
-    background-color: var(--primary-color-light);
-    padding: 6px 15px;
-    border-radius: 5px;
-    border: 1px solid var(--secondary-color-light);
-    transition: 0.3s ease 0s;
-    cursor: pointer;
+  color: var(--secondary-color-light);
+  font-size: var(--normal-font-size);
+  background-color: var(--primary-color-light);
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--secondary-color-light);
+  transition: 0.3s ease 0s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -71,7 +71,8 @@ body {
   background-color: var(--primary-color-light);
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--title-font);
 }
 
@@ -215,16 +216,6 @@ ul li a:hover {
   min-height: 100vh;
 }
 
-/* .svg-container {
-  max-width: 70%;
-  max-height: 70%;
-  background-color: blue;
-}
-
-.svg-container svg {
-  min-width: 30vw;
-} */
-
 #hero-container {
   position: absolute;
   top: 15%;
@@ -237,9 +228,9 @@ ul li a:hover {
 }
 
 .hero-intro h1 {
-    font-size: 75px;
-    color: var(--secondary-color-light);
-    width: fit-content;
+  font-size: 75px;
+  color: var(--secondary-color-light);
+  width: fit-content;
 }
 
 .hero-intro h2 {
@@ -254,6 +245,14 @@ ul li a:hover {
   color: var(--accent-color);
   font-size: var(--large-font-size);
 }
+
+/* .line {
+  position: absolute;
+  top: 5%;
+  left: 1%;
+  height: 500px;
+  border-left: 3px solid var(--secondary-color-light);
+} */
 
 #hero-desc {
   color: var(--accent-color);
