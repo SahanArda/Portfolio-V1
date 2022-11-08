@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a8e27bdb50.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
 
     <title>Website 2</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="flex">
-            <h1 class="logo">Arda</h1>
-            <input type="checkbox" id="menu-checkbox">
-            <label for="menu-checkbox" id="menu-hamburger">
-            <div></div>
-            <div></div>
-            <div></div>
-            </label>            
-            <ul class="flex nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-                <button class="btn" id="resume-btn">Resume</button>
-            </ul>
-            
-        </nav>
+      <nav class="flex">
+        <h1 class="logo">Arda</h1>
+        <input type="checkbox" id="menu-checkbox" />
+        <label for="menu-checkbox" id="menu-hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+        <ul class="flex nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+          <button class="btn" id="resume-btn">Resume</button>
+        </ul>
+      </nav>
     </header>
 
-    
+    <main>
+      <section class="hero flex">
+        <div class="container flex" id="hero-container">
+          <div class="hero-intro">
+            <p>Hi, my name is</p>
+            <h1>Arda Sahan.</h1>
+            <h2>Frontend Developer.</h2>
+            <p id="hero-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              accusamus aperiam doloremque sapiente. Nesciunt a tenetur voluptas
+              odio consequatur, quas laborum labore unde quo, quod blanditiis,
+              repellat numquam. Rem, totam?
+            </p>
+
+            <div class="icons">
+              <ul class="flex">
+                <li>
+                  <a href="mailto:ardambp@outlook.com"
+                    ><em class="fa fa-envelope"></em
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/SahanArda"
+                    ><em class="fa fa-github"></em
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/arda-sahan-142309250/"
+                    ><em class="fa fa-linkedin"></em
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="line"></div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
