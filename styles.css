@@ -49,7 +49,6 @@
   align-items: center;
   gap: 3rem;
   padding: 2rem;
-  /* background-color: #fff; */
 }
 
 .btn {
@@ -130,7 +129,7 @@ label div:last-child {
   width: 6px;
   margin-left: 12px;
   margin-bottom: 3px;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color-light);
 }
 
 /* Navbar */
@@ -162,8 +161,14 @@ ul li a:hover {
 }
 
 .logo {
-  cursor: pointer;
+  cursor: default;
   color: var(--accent-color);
+  transition: 0.2s;
+}
+
+.logo:hover {
+  text-decoration: underline;
+  color: var(--secondary-color-light);
 }
 
 @media screen and (max-width: 768px) {
@@ -226,32 +231,65 @@ ul li a:hover {
   left: 20%;
 }
 
+.hero-intro {
+  border-left: 3px solid var(--secondary-color-light);
+  padding: 30px;
+}
+
 .hero-intro h1 {
     font-size: 75px;
     color: var(--secondary-color-light);
     width: fit-content;
-    text-align:left;
 }
 
 .hero-intro h2 {
   font-size: 65px;
   color: var(--secondary-color-light);
   width: fit-content;
-  text-align: left;
+  position: relative;
+  right: 3px;
 }
 
 .hero-intro p {
-    color: var(--accent-color);
-    width: 400px;
-    font-size: var(--large-font-size);
-    margin-top: 10px;
-    text-align: left;
+  color: var(--accent-color);
+  font-size: var(--large-font-size);
 }
 
-.hero button {
-  font-size: 20px;
-  padding: 10px 15px;
-  margin-top: 40px;
+#hero-desc {
+  color: var(--accent-color);
+  width: 450px;
+  font-size: var(--large-font-size);
+  margin-top: 15px;
 }
 
+.icons {
+  margin-top: 20px;
+}
+.icons ul {
+  width: fit-content;
+}
 
+.icons ul li {
+  position: relative;
+  right: 20px;
+}
+
+.icons ul li .fa {
+  font-size: 35px;
+  color: var(--text-color-light);
+}
+
+.icons ul li a:hover .fa {
+  color: var(--secondary-color-light);
+}
+
+.icons ul li a {
+  position: relative;
+  display: block;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.icons ul li a:hover {
+  transform: translate(0, -10px);
+}
