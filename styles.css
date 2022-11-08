@@ -339,6 +339,7 @@ ul li a:hover {
 
 .about h2 {
   margin-bottom: 30px;
+  margin-left: 2px;
   color: var(--accent-color);
   font-size: var(--h1-font-size);
 }
