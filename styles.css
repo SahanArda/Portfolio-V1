@@ -18,6 +18,39 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
+  --icon-size: 2.1875rem;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+      /* Font Sizes */
+      --hero-title: 4rem;
+      --hero-title-2: 3.7rem;
+      --h1-font-size: 2rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1.125rem;
+      --large-font-size: 0.9rem;
+      --normal-font-size: 0.775rem;
+      --small-font-size: 0.813rem;
+      --smaller-font-size: 0.75rem;
+      --icon-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+      /* Font Sizes */
+      --hero-title: 3rem;
+      --hero-title-2: 2.7rem;
+      --h1-font-size: 2rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1.125rem;
+      --large-font-size: 0.9rem;
+      --normal-font-size: 0.775rem;
+      --small-font-size: 0.813rem;
+      --smaller-font-size: 0.75rem;
+      --icon-size: 1.8rem;
+  }
 }
 
 * {
@@ -141,6 +174,7 @@ a {
 }
 
 nav ul li {
+  font-size: var(--large-font-size);
   margin: 0 5px;
 }
 
@@ -209,10 +243,12 @@ ul li a:hover {
 }
 
 #hero-container {
-  position: absolute;
-  top: 15%;
-  left: 20%;
-}
+  min-height: 60vh;
+  max-width: 70vw;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;}
 
 .hero-intro {
   border-left: 3px solid var(--secondary-color-light);
@@ -266,7 +302,7 @@ ul li a:hover {
 }
 
 .icons ul li .fa {
-  font-size: 35px;
+  font-size: var(--icon-size);
   color: var(--text-color-light);
 }
 
@@ -309,6 +345,7 @@ ul li a:hover {
 }
 
 .about-info p {
+  font-size: var(--large-font-size);
   padding: 3px;
 }
 
