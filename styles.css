@@ -9,6 +9,8 @@
   --body-font: "Roboto", sans-serif;
 
   /* Font Sizes */
+  --hero-title: 4.6875rem;
+  --hero-title-2: 4.0625rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
@@ -16,19 +18,6 @@
   --normal-font-size: 0.938rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
-}
-
-/* Font Sizes For Larger Screens */
-@media screen and (min-width: 1450px) {
-  :root {
-    /* Font Sizes */
-    --h1-font-size: 4rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
 }
 
 * {
@@ -49,6 +38,7 @@
   align-items: center;
   gap: 3rem;
   padding: 2rem;
+  /* background-color: #fff; */
 }
 
 .btn {
@@ -69,6 +59,7 @@
 
 body {
   background-color: var(--primary-color-light);
+  color: var(--accent-color);
 }
 
 h1,
@@ -173,6 +164,7 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  
   nav {
     flex-direction: column;
   }
@@ -228,13 +220,13 @@ ul li a:hover {
 }
 
 .hero-intro h1 {
-  font-size: 75px;
+  font-size: var(--hero-title);
   color: var(--secondary-color-light);
   width: fit-content;
 }
 
 .hero-intro h2 {
-  font-size: 65px;
+  font-size: var(--hero-title-2);
   color: var(--secondary-color-light);
   width: fit-content;
   position: relative;
@@ -291,4 +283,36 @@ ul li a:hover {
 
 .icons ul li a:hover {
   transform: translate(0, -10px);
+}
+
+/* About */
+.about {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.about-info {
+  width: fit-content;
+  padding: 10px;
+}
+
+.about h2 {
+  margin-bottom: 30px;
+  color: var(--accent-color);
+  font-size: var(--h1-font-size);
+}
+
+.about-info span {
+  color: var(--secondary-color-light);
+  font-size: var(--h1-font-size);
+}
+
+.about-info p {
+  padding: 3px;
+}
+
+#skills {
+  color: var(--secondary-color-light);
+  font-size: var(--large-font-size);
 }
