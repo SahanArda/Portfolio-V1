@@ -100,7 +100,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+span {
   font-family: var(--title-font);
 }
 
@@ -357,4 +358,49 @@ ul li a:hover {
 #skills {
   color: var(--secondary-color-light);
   font-size: var(--large-font-size);
+}
+
+/* Projects */
+.projects {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contact */
+.contact {
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 85vh;
+}
+
+#contact-container {
+  min-height: 40vh;
+}
+
+.contact-info {
+  max-width: 600px;
+  font-size: var(--large-font-size);
+  padding: 10px;
+  text-align: center;
+}
+
+.contact-info h1 {
+  font-size: var(--h1-font-size);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info span {
+  color: var(--secondary-color-light);
+  font-size: var(--h1-font-size);
+}
+
+.email {
+  margin-top: 50px;
+}
+
+.email a {
+  font-size: var(--large-font-size);
+  padding: 10px 15px;
 }
