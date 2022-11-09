@@ -370,7 +370,7 @@ ul li a:hover {
 /* Contact */
 .contact {
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   min-height: 85vh;
 }
 
@@ -403,4 +403,12 @@ ul li a:hover {
 .email a {
   font-size: var(--large-font-size);
   padding: 10px 15px;
+}
+
+/* footer */
+footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
 }
