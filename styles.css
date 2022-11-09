@@ -23,33 +23,33 @@
 
 @media screen and (max-width: 1024px) {
   :root {
-      /* Font Sizes */
-      --hero-title: 4rem;
-      --hero-title-2: 3.7rem;
-      --h1-font-size: 2rem;
-      --h2-font-size: 1.25rem;
-      --h3-font-size: 1.125rem;
-      --large-font-size: 0.9rem;
-      --normal-font-size: 0.775rem;
-      --small-font-size: 0.813rem;
-      --smaller-font-size: 0.75rem;
-      --icon-size: 1.8rem;
+    /* Font Sizes */
+    --hero-title: 4rem;
+    --hero-title-2: 3.7rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --large-font-size: 0.9rem;
+    --normal-font-size: 0.775rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    --icon-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 768px) {
   :root {
-      /* Font Sizes */
-      --hero-title: 3rem;
-      --hero-title-2: 2.7rem;
-      --h1-font-size: 2rem;
-      --h2-font-size: 1.25rem;
-      --h3-font-size: 1.125rem;
-      --large-font-size: 0.9rem;
-      --normal-font-size: 0.775rem;
-      --small-font-size: 0.813rem;
-      --smaller-font-size: 0.75rem;
-      --icon-size: 1.8rem;
+    /* Font Sizes */
+    --hero-title: 3rem;
+    --hero-title-2: 2.7rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --large-font-size: 0.9rem;
+    --normal-font-size: 0.775rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    --icon-size: 1.8rem;
   }
 }
 
@@ -203,7 +203,6 @@ ul li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  
   nav {
     flex-direction: column;
   }
@@ -253,7 +252,8 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  padding: 2rem;}
+  padding: 2rem;
+}
 
 .hero-intro {
   border-left: 3px solid var(--secondary-color-light);
@@ -370,7 +370,7 @@ ul li a:hover {
 /* Contact */
 .contact {
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   min-height: 85vh;
 }
 
@@ -403,4 +403,12 @@ ul li a:hover {
 .email a {
   font-size: var(--large-font-size);
   padding: 10px 15px;
+}
+
+/* footer */
+footer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 15vh;
 }
