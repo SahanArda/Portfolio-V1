@@ -106,7 +106,7 @@ span {
 }
 
 /* Hamburger icon */
-#menu-checkbox {
+#menu_checkbox {
   display: none;
 }
 
@@ -115,11 +115,11 @@ span {
 }
 
 label {
+  /* position: absolute; */
   top: 50%;
   right: 0;
   left: 0;
-  margin: 0 auto;
-  display: block;
+  margin: 35px auto;
   width: 30px;
   height: 30px;
   transform: translateY(-50%);
@@ -151,11 +151,11 @@ label div:last-child {
   margin-bottom: 0;
 }
 
-#menu-checkbox:checked + label {
+#menu_checkbox:checked + label {
   transform: translateY(-50%) rotateZ(-90deg);
 }
 
-#menu-checkbox:checked + label div {
+#menu_checkbox:checked + label div {
   width: 6px;
   margin-left: 12px;
   margin-bottom: 3px;
