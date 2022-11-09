@@ -163,6 +163,24 @@ label div:last-child {
 }
 
 /* Navbar */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--primary-color-light);
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-down header {
+  transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header {
+  backdrop-filter: blur(0.8);
+}
+
 nav {
   justify-content: space-between;
   align-items: center;
