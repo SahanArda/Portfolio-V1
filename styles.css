@@ -14,8 +14,8 @@
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1.125rem;
-  --large-font-size: 1rem;
-  --normal-font-size: 0.938rem;
+  --large-font-size: 1.1rem;
+  --normal-font-size: 1rem;
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
   --icon-size: 2.1875rem;
@@ -106,7 +106,7 @@ span {
 }
 
 /* Hamburger icon */
-#menu-checkbox {
+#menu_checkbox {
   display: none;
 }
 
@@ -115,11 +115,11 @@ span {
 }
 
 label {
+  /* position: absolute; */
   top: 50%;
   right: 0;
   left: 0;
-  margin: 0 auto;
-  display: block;
+  margin: 35px auto;
   width: 30px;
   height: 30px;
   transform: translateY(-50%);
@@ -151,11 +151,11 @@ label div:last-child {
   margin-bottom: 0;
 }
 
-#menu-checkbox:checked + label {
+#menu_checkbox:checked + label {
   transform: translateY(-50%) rotateZ(-90deg);
 }
 
-#menu-checkbox:checked + label div {
+#menu_checkbox:checked + label div {
   width: 6px;
   margin-left: 12px;
   margin-bottom: 3px;
@@ -197,7 +197,7 @@ a {
 }
 
 nav ul li {
-  font-size: var(--large-font-size);
+  font-size: var(--normal-font-size);
   margin: 0 5px;
 }
 
@@ -297,13 +297,9 @@ ul li a:hover {
   font-size: var(--large-font-size);
 }
 
-/* .line {
-  position: absolute;
-  top: 5%;
-  left: 1%;
-  height: 500px;
-  border-left: 3px solid var(--secondary-color-light);
-} */
+.hero-intro span {
+  color: var(--secondary-color-light);
+}
 
 #hero-desc {
   color: var(--accent-color);
@@ -356,7 +352,7 @@ ul li a:hover {
   padding: 10px;
 }
 
-.about h2 {
+.about-info h2 {
   margin-bottom: 30px;
   margin-left: 2px;
   color: var(--accent-color);
@@ -383,6 +379,110 @@ ul li a:hover {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  background-color: var(--secondary-color-light);
+}
+
+.card-list {
+  margin: 0 auto;
+  width: 780px;
+  padding: 10px;
+  height: auto;
+}
+
+.card-list li {
+  position: relative;
+  list-style: none;
+  background: var(--primary-color-light);
+  border-radius: 5px;
+  box-shadow: 0 3px 4px 0 #0001;
+  overflow: hidden;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+
+.card-list li:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 14px 0 #0005;
+}
+
+.card-list .card {
+  overflow: hidden;
+  display: block;
+}
+
+.card-list .card-image {
+  float: left;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.card-list .card-image .image {
+  width: 280px;
+  height: 250px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-list .meta-sission {
+  position: relative;
+  padding: 15px;
+  display: block;
+  height: 220px;
+}
+
+.card-list .meta-sission .head {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.card-list .meta-sission .head p {
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--secondary-color-light);
+}
+
+.card-list .card-body .title {
+  min-height: fit-content;
+  overflow: hidden;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card-list .card-body .card-desc {
+  min-height: fit-content;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.card-list .footer .tools {
+  display: block;
+  font-size: 12px;
+  margin-top: 40px;
+  color: var(--secondary-color-light);
+}
+
+@media screen and (max-width: 780px) {
+  .card-list {
+    width: 96%;
+  }
+  .card-list li:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .card-list .card-image {
+    float: none;
+    margin-right: 0;
+  }
+  .card-list .card-image .image {
+    width: 100%;
+  }
 }
 
 /* Contact */
@@ -425,8 +525,10 @@ ul li a:hover {
 
 /* footer */
 footer {
+  color: var(--primary-color-light);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 15vh;
+  background-color: var(--secondary-color-light);
 }
