@@ -169,16 +169,13 @@ header {
   top: 0;
   left: 0;
   z-index: 9999;
-  background-color: var(--primary-color-light);
+  background-color: rgb(33, 32, 30, 0.8);
+  backdrop-filter: blur(10px);
   transition: all 0.3s ease-in-out;
 }
 
 .scroll-down header {
   transform: translate3d(0, -100%, 0);
-}
-
-.scroll-up header {
-  backdrop-filter: blur(0.8);
 }
 
 nav {
