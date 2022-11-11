@@ -5,11 +5,18 @@ resumeBtn.addEventListener("click", () => {
 });
 
 const menuHamburger = document.querySelector("#menu-hamburger");
-
 menuHamburger.addEventListener("click", () => {
   const nav = document.querySelector("nav");
   nav.classList.toggle("active");
+  body.classList.toggle("scroll-none");
+  menuHamburger.style.top = "2%";
 });
+
+function closeNav() {
+  const nav = document.querySelector("nav");
+  nav.classList.remove("active");
+  body.classList.remove("scroll-none");
+}
 
 const body = document.body;
 let lastScroll = 0;
