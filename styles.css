@@ -38,12 +38,10 @@ html {
 
 .container {
   min-height: 60vh;
-  /* max-width: 60vw; */
   justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 2rem;
-  /* background-color: #fff; */
 }
 
 .btn {
@@ -83,15 +81,12 @@ span {
 }
 
 label {
-  /* position: absolute; */
   top: 50%;
   right: 0;
   left: 0;
   margin: 35px auto;
   width: 30px;
   height: 30px;
-  /* transform: translateY(-50%);
-  transition: 0.3s ease transform; */
   cursor: pointer;
 }
 
@@ -102,8 +97,6 @@ label div {
   margin-left: 0;
   margin-bottom: 6px;
   border-radius: 4px;
-  /* transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
-    0.3s ease background-color; */
 }
 
 label div:first-child {
