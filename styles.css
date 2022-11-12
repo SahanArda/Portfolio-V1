@@ -38,12 +38,10 @@ html {
 
 .container {
   min-height: 60vh;
-  /* max-width: 60vw; */
   justify-content: center;
   align-items: center;
   gap: 3rem;
   padding: 2rem;
-  /* background-color: #fff; */
 }
 
 .btn {
@@ -83,15 +81,12 @@ span {
 }
 
 label {
-  /* position: absolute; */
   top: 50%;
   right: 0;
   left: 0;
   margin: 35px auto;
   width: 30px;
   height: 30px;
-  /* transform: translateY(-50%);
-  transition: 0.3s ease transform; */
   cursor: pointer;
 }
 
@@ -102,8 +97,6 @@ label div {
   margin-left: 0;
   margin-bottom: 6px;
   border-radius: 4px;
-  /* transition: 0.3s ease width, 0.3s ease margin-left, 0.3s ease margin-bottom,
-    0.3s ease background-color; */
 }
 
 label div:first-child {
@@ -489,11 +482,56 @@ ul li a:hover {
 /* footer */
 footer {
   color: var(--primary-color-light);
+  font-size: var(--large-font-size);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 15vh;
   background-color: var(--secondary-color-light);
+}
+
+@media screen and (min-width: 1441px) {
+  :root {
+    /* Font Sizes */
+    --hero-title: 8rem;
+    --hero-title-2: 7.7rem;
+    --h1-font-size: 4.5rem;
+    --large-font-size: 2rem;
+    --normal-font-size: 1.7rem;
+    --icon-size: 4.2rem;
+  }
+
+  nav ul li {
+    margin: 0 25px;
+  }
+
+  #hero-desc {
+    max-width: 800px;
+  }
+
+  .logo {
+    font-size: var(--normal-font-size);
+  }
+
+  .about {
+    min-height: 100vh;
+  }
+
+  .card-list {
+    scale: 2;
+  }
+
+  .contact {
+    min-height: 60vh;
+  }
+
+  .contact-info {
+    max-width: 750px;
+  }
+
+  .about-container {
+    max-width: 1400px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -502,12 +540,8 @@ footer {
     --hero-title: 4rem;
     --hero-title-2: 3.7rem;
     --h1-font-size: 2rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
     --large-font-size: 0.9rem;
     --normal-font-size: 0.775rem;
-    --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75rem;
     --icon-size: 1.8rem;
   }
 }
@@ -521,10 +555,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
- .hero-intro {
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  .hero-intro {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
   }
 
   nav ul li {
