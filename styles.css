@@ -372,6 +372,11 @@ ul li a:hover {
   margin-right: 20px;
 }
 
+#image1 {
+  width: 280px;
+  height: 210px;
+}
+
 .card-list .card-image .image {
   width: 280px;
   height: 250px;
