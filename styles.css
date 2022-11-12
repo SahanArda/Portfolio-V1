@@ -510,7 +510,7 @@ footer {
   }
 
   .logo {
-    font-size: var(--normal-font-size)
+    font-size: var(--normal-font-size);
   }
 
   .about {
@@ -555,10 +555,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
- .hero-intro {
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  .hero-intro {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
   }
 
   nav ul li {
