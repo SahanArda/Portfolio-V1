@@ -159,12 +159,6 @@ ul li a:hover {
 .logo {
   cursor: default;
   color: var(--accent-color);
-  transition: 0.2s;
-}
-
-.logo:hover {
-  text-decoration: underline;
-  color: var(--secondary-color-light);
 }
 
 @media screen and (max-width: 768px) {
@@ -302,6 +296,7 @@ ul li a:hover {
 
 .about-info {
   min-width: auto;
+  line-height: 1.5;
 }
 
 .about-info h2 {
@@ -483,6 +478,7 @@ ul li a:hover {
   font-size: var(--large-font-size);
   padding: 10px;
   text-align: center;
+  line-height: 1.5;
 }
 
 .contact-info h1 {
