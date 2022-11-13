@@ -343,6 +343,7 @@ ul li a:hover {
   width: 780px;
   padding: 10px;
   height: auto;
+  padding-top: 40px;
 }
 
 .card-list li {
@@ -375,6 +376,22 @@ ul li a:hover {
 #image1 {
   width: 280px;
   height: 210px;
+}
+
+.links {
+  margin-top: 15px;
+  float: left;
+}
+
+.links a {
+  color: var(--secondary-color-light);
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 0;
+}
+
+.links a:hover {
+  color: var(--accent-color);
 }
 
 .card-list .card-image .image {
@@ -419,11 +436,15 @@ ul li a:hover {
   font-size: 13px;
 }
 
-.card-list .footer .tools {
+.card-list .footer {
   display: block;
   font-size: 12px;
-  margin-top: 40px;
+  margin-top: 30px;
   color: var(--secondary-color-light);
+}
+
+.card-list .footer .links {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 780px) {
