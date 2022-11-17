@@ -581,6 +581,19 @@ footer {
     --normal-font-size: 1.3rem;
     --icon-size: 2.2rem;
   }
+
+  #image1 {
+    width: 280px;
+    height: 240px;
+  }
+  
+  .card-list .card-image .image {
+    width: 280px;
+    height: 290px;
+    display: block;
+    background-size: cover;
+    background-position: center;
+  }
   
   .card-list .meta-sission .head p {
     list-style: none;
