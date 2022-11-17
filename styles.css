@@ -516,7 +516,7 @@ footer {
   background-color: var(--secondary-color-light);
 }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 2100px) {
   :root {
     /* Font Sizes */
     --hero-title: 8rem;
@@ -560,7 +560,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1650px) {
+@media screen and (max-width: 2100px) {
   :root {
     /* Font Sizes */
     --hero-title: 4rem;
