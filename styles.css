@@ -560,7 +560,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1439px) {
   :root {
     /* Font Sizes */
     --hero-title: 4rem;
