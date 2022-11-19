@@ -29,10 +29,14 @@
 
 html {
   scroll-behavior: smooth;
+  /* position: fixed; */
+  height: 100%;
 }
 
 body {
+  overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* Classes */
