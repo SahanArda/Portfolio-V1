@@ -25,6 +25,7 @@ window.addEventListener("scroll", () => {
   if (currentScroll <= 0) {
     body.classList.remove("scroll-up")
   }
+  if (currentScroll <= 140)sticky.addClass('scroll-up')
 
   if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
     body.classList.remove("scroll-up")
