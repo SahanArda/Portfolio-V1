@@ -633,9 +633,9 @@ footer {
     --hero-title-2: 2.7rem;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 }
 
 @media screen and (max-width: 425px) {
