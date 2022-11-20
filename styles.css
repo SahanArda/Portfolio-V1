@@ -571,17 +571,6 @@ footer {
   
 }
 
-/* @media screen and (max-width: 2100px) {
-  :root {
-    --hero-title: 4rem;
-    --hero-title-2: 3.7rem;
-    --h1-font-size: 2rem;
-    --large-font-size: 0.9rem;
-    --normal-font-size: 0.775rem;
-    --icon-size: 1.8rem;
-  }
-} */
-
 @media screen and (min-width: 1600px) {
   :root {
     /* Font Sizes */
