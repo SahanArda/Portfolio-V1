@@ -341,7 +341,7 @@ ul li a:hover {
 .card-list {
   margin: 0 auto;
   width: 780px;
-  padding: 10px;
+  /* padding: 10px; */
   height: auto;
   padding-top: 40px;
 }
