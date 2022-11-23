@@ -65,6 +65,10 @@ body {
   color: var(--primary-color-light);
 }
 
+#resume-btn {
+  padding-top: 8px;
+}
+
 body {
   background-color: var(--primary-color-light);
   color: var(--accent-color);
@@ -182,7 +186,8 @@ ul li a:hover {
     font-size: var(--h1-font-size);
   }
 
-  nav ul button {
+  #resume-btn {
+    margin-top: 10px;
     scale: 1.5;
   }
 
@@ -647,7 +652,7 @@ footer {
     font-size: var(--h2-font-size);
   }
 
-  nav ul button {
+  #resume-btn {
     scale: 1;
   }
 }
